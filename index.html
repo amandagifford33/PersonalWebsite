@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: aquamarine;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color:hotpink;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: lavender;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink; 
+}
+
+nav a {
+    text-decoration: none;
+    color: hotpink;
+    display: block;
+    padding: 60px;
+}
+/* Style the content */
+article {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.photo {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color:hotpink;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>-->
+</head>
+<body>
+<header>
+  <h2>Amanda Gifford</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="src/resume.html">Resume</a></li>
+      <li><a href="src/contact.html">Contact</a></li>
+          
+      </a></li>
+    </ul>
+  </nav>
+  <div class="photo">
+      <img src="profilepic.jpg">
+  </div>
+  <article>
+    <p>I am a 25 year old web developer living in San Francisco. I am very interested in the intersection of technology and humanity, and look forward to advancing technology in a contientious and ethical manner. In particular, I am interested in the future of big data solutions and would like to make a difference in the field of technology in healthcare.</p>
+    <p>In my free time, I enjoy adventuring outdoors, exploring the various pockets of The Bay. I would love to be able to travel more in the next few years, especially to visit Thailand and other parts of Southeast Asia. My philosophy in life lately has been to stay as aware and present as possible, and start collecting all the cues the Universe is constantly leaving for me :)</p>
+  </article>
+</section>
+
+
+</body>
+</html>
